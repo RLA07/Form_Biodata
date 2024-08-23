@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Mahasiswa</title>
+    <link rel="stylesheet" href="css/Daftar.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="overlay">
+        <h1>Form Pendaftaran Mahasiswa</h1>
+      </div>
+    </div>
+    <form>
+      <br /><br />
+      <label for="nomor_hp">No. Pendaftaran:</label><br />
+      <input
+        type="tel"
+        id="nomor_hp"
+        name="nomor_hp"
+        pattern="[0-9]*"
+        inputmode="numeric"
+        placeholder="826481940"
+      /><br />
+      <label for="nama">Nama:</label><br />
+      <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" />
+      <br />
+      <label for="nomor_hp">No. HP:</label><br />
+      <input
+        type="tel"
+        id="nomor_hp"
+        name="nomor_hp"
+        pattern="[0-9]*"
+        inputmode="numeric"
+        placeholder="081234567890"
+      />
+      <br />
+      <label for="AsalSekolah">Asal Sekolah:</label><br />
+      <input
+        type="text"
+        id="AsalSekolaha"
+        name="AsalSekolah"
+        placeholder="Asal Sekolah"
+      /><br />
+      <label for="Tempat_Lahir">Tempat Lahir:</label><br />
+      <input
+        type="text"
+        id="Tempat_Lahir"
+        name="Tempat_Lahir"
+        placeholder="Palembang"
+      /><br />
+      <label for="Tanggal_Lahir">Tanggal Lahir:</label><br />
+      <input
+        type="date"
+        id="Tanggal_Lahir"
+        name="Tanggal_Lahir"
+        placeholder="dd/mm/yyyy"
+      /><br />
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="contoh@gmail.com"
+      />
+      <br /><br />
+
+      <label>Jenis Kelamin:</label><br />
+      <input
+        type="radio"
+        id="laki_laki"
+        name="jenis_kelamin"
+        value="Laki-laki"
+      />
+      <label for="laki_laki">Laki-laki</label><br />
+      <input
+        type="radio"
+        id="perempuan"
+        name="jenis_kelamin"
+        value="Perempuan"
+      />
+      <label for="perempuan">Perempuan</label>
+      <br /><br />
+
+      <label for="agama">Agama:</label><br />
+      <select id="agama" name="agama" size="5">
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Katolik">Katolik</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Konghucu">Konghucu</option>
+      </select>
+      <br /><br />
+
+      <label for="jurusan">Jurusan:</label><br />
+      <select id="jurusan" name="jurusan">
+        <option value="Teknik Elektro">Teknik Elektro</option>
+        <option value="Teknik Sipil">Teknik Sipil</option>
+        <option value="Teknik Mesin">Teknik Mesin</option>
+        <option value="Teknik Kimia">Teknik Kimia</option>
+        <option value="Teknik Komputer">Teknik Komputer</option>
+        <option value="Akutansi">Akutansi</option>
+        <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+        <option value="Bahasa Inggris">Bahasa Inggris</option>
+        <option value="Management Informatika">Management Informatika</option>
+      </select>
+      <br /><br />
+
+      <label for="hobi">Hobi:</label><br />
+      <input type="checkbox" id="membaca" name="hobi[]" value="Membaca" />
+      <label for="membaca">Membaca</label><br />
+      <input type="checkbox" id="menulis" name="hobi[]" value="Menulis" />
+      <label for="menulis">Menulis</label><br />
+      <input type="checkbox" id="berenang" name="hobi[]" value="Berenang" />
+      <label for="berenang">Berenang</label><br />
+      <input type="checkbox" id="dll" name="hobi[]" value="DanLainLain" />
+      <label for="dll">DLL: </label><br />
+      <input type="text" id="hobi" name="hobi" placeholder="Tuliskan Hobimu" />
+      <br /><br />
+
+      <label for="alamat">Alamat:</label><br />
+      <textarea
+        id="alamat"
+        name="alamat"
+        rows="4"
+        placeholder="Masukkan Alamat Domisili"
+        required
+      ></textarea>
+      <br /><br />
+      <div class="konfir">
+        <p>Sudah punya akun? <a href="Login.html">klik disini</a></p>
+        <button class="reset">Reset</button>
+        <button class="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

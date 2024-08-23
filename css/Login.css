@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../img/polsri5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.login-container {
+  background-color: rgba(127, 127, 127, 0.211);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 300px;
+  mix-blend-mode: screen;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #abababc5;
+  background-color: #0c0b0b2f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  mix-blend-mode: screen;
+}
+::-webkit-input-placeholder {
+  color: rgb(197, 197, 197);
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  background-color: #4caf4feb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  mix-blend-mode: screen;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #45a049dd;
+}
+
+.login-container .register {
+  text-align: center;
+  margin-top: 10px;
+  mix-blend-mode: screen;
+}
+a {
+  color: aqua;
+  text-decoration: none;
+}
