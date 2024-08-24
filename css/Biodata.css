@@ -1,9 +1,15 @@
 body {
-  padding: 1rem 5%;
+  height: 100%;
+  margin: 0;
   font-family: Arial;
+}
+
+.container {
   display: flex;
+  padding: 1rem 5% 2rem;
   flex-direction: column;
 }
+
 h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -12,6 +18,7 @@ table {
   padding: 0;
   border: none;
   width: 25rem;
+  font-size: 1rem;
 }
 
 img {
@@ -37,10 +44,11 @@ img {
   -o-border-radius: 15px;
 }
 td.titik_dua {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
   padding-block: 0px;
 }
+
 td.st {
   font-weight: bold;
 }
@@ -81,11 +89,23 @@ p {
   -o-border-radius: 2rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  background-color: rgb(244, 244, 244);
+}
+
 @media (max-width: 1080px) {
   body {
-    padding: 7%;
     font-size: 0.9rem;
   }
+
+  .container {
+    padding: 0.5rem 7% 1.5rem;
+  }
+
   .bg {
     align-items: center;
     justify-content: center;
@@ -94,5 +114,33 @@ p {
   table {
     width: 21rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    padding: 0.5rem 7% 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .bg {
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    width: 21rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 390px) {
+  td.titik_dua {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-block: 0px;
   }
 }

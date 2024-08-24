@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .login-container {
@@ -83,4 +83,22 @@ body {
 a {
   color: aqua;
   text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8268557422969187) 0%,
+    rgba(0, 0, 0, 0.7204131652661064) 21%,
+    rgba(0, 0, 0, 0.41789215686274506) 48%,
+    rgba(0, 0, 0, 0.09016106442577032) 76%,
+    rgba(249, 254, 255, 0) 100%
+  );
+  color: white;
+  text-align: center;
+  z-index: 2;
 }
