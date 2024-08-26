@@ -1,19 +1,21 @@
-body {
+body,
+html {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/bg.jpg");
-  background-size: cover;
 }
 .overlay {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: auto;
   top: 0;
   right: 0;
   bottom: 0;
@@ -65,7 +67,7 @@ body {
 }
 .description {
   width: 30rem;
-  margin: 0 5%;
+  padding: 0 5%;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: "Times New Roman";
@@ -109,7 +111,7 @@ footer {
   z-index: 2;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 799px) {
   .container {
     flex-wrap: wrap;
     height: 85%;
@@ -121,6 +123,26 @@ footer {
 
   .description {
     font-size: 80%;
-    margin: 0px 8%;
+    padding: 0px 8%;
+  }
+}
+
+@media (max-width: 386px) {
+  .container .profile {
+    width: 9rem;
+  }
+
+  h2,
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p td {
+    font-size: 0.8rem;
+  }
+
+  .container .profile img {
+    width: 8rem;
+    height: 8rem;
   }
 }
